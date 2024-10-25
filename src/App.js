@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Cart from './Components/Cart/Cart';
+import Clothes from './Components/ClothesComponents/Clothes';
+import AllCategories from './Components/Filter/AllCategories';
+// import { useState } from "react";
 
-function App() {
+
+const App = () => {
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='align'>
+         <AllCategories />
+         <Clothes />
+      </div>
+       
+      <div className='map'>
+      <Cart />
+      
+     </div>
+     </div>
+    
+    
   );
 }
 
 export default App;
+
